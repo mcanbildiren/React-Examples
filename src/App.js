@@ -4,13 +4,18 @@ import Personel from "./Personel";
 function App() {
   const kisi = {
     id: 1,
-    name: "ali",
-    surname: "kılıç",
+    name: "can",
+    surname: "bildiren",
     maas: 3500,
+  };
+  const student = {
+    id: 2,
+    name: "emre",
+    surname: "yasar",
   };
   return (
     <>
-      <Personel kisi = {kisi}/>
+      <Personel person={kisi} student={student} />
     </>
   );
 }
